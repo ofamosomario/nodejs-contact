@@ -28,7 +28,7 @@ class UserController {
     const user = await User.create(req.body)
     const userId = user.id
 
-    return res.status(200).json({
+    return res.status(201).json({
       token: Jwt.sign({ userId }, authConfig.secret, {
         expiresIn: authConfig.expiresIn,
       })
@@ -75,7 +75,7 @@ class UserController {
 
       if ( await user.update(req.body) ) {
 
-        return res.status(200).json({
+        return res.status(201).json({
           id: user.id,
           email: req.body.email
         });

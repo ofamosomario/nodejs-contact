@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha __tests__/user.test.js",
-    "dev": "babel-node nodemon src/server.js"
+    "test": "jest",
+    "dev": "nodemon src/server.js"
   },
   "dependencies": {
     "apidoc": "^0.27.1",
@@ -25,6 +25,7 @@
     "yup": "^0.32.9"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.14.0",
     "@types/yup": "^0.29.11",
     "gulp": "^4.0.2",
     "gulp-apidoc": "^0.2.8",
