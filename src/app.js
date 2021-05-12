@@ -2,7 +2,6 @@ import express from 'express';
 import routes from './routes';
 
 import './database';
-var router = express.Router();
 class App {
   constructor() {
     this.server = express();

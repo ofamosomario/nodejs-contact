@@ -6,6 +6,10 @@ import authConfig from '../../config/auth'
 
 class UserController {
 
+  async index(req, res) {
+    return res.status(200).json({ error: 'OLA!' })
+  }
+
   async store(req , res){
 
     const schema = Yup.object().shape({
