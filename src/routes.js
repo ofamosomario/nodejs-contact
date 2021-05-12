@@ -52,7 +52,7 @@ routes.post('/sessions' , SessionController.store);
  */
 routes.post('/users' , UserController.store);
 
-routes.use(authMiddleware);
+//routes.use(authMiddleware);
 
 /**
  * @api {put} /users Update a user

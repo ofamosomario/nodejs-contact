@@ -253,7 +253,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success",
-          "content": "HTTP/1.1 204 No Content",
+          "content": "HTTP/1.1 200",
           "type": "json"
         }
       ]
